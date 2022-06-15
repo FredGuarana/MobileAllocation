@@ -11,6 +11,7 @@ public class MenuActivity extends AppCompatActivity {
     private Button btCurso;
     private Button btDepartamento;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,5 +26,13 @@ public class MenuActivity extends AppCompatActivity {
             startActivity(mensageiro);
 
         });
+        btDepartamento.setOnClickListener(v -> {
+
+            Intent mensageiro2 = new Intent(getApplicationContext(),DepartamentoActivity.class);
+            startActivity(mensageiro2);
+        });
+
+
+
     }
 }
